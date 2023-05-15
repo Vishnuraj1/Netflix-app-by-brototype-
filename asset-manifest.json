@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/NetflexByBrototype/static/css/main.cd6bdc15.css",
+    "main.js": "/NetflexByBrototype/static/js/main.7b7f0bdf.js",
+    "index.html": "/NetflexByBrototype/index.html",
+    "main.cd6bdc15.css.map": "/NetflexByBrototype/static/css/main.cd6bdc15.css.map",
+    "main.7b7f0bdf.js.map": "/NetflexByBrototype/static/js/main.7b7f0bdf.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cd6bdc15.css",
+    "static/js/main.7b7f0bdf.js"
+  ]
+}
