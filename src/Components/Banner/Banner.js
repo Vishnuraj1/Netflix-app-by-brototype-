@@ -11,7 +11,7 @@ function Banner() {
     axios.get(`trending/all/week?api_key=${API_KEY}&language=en-US`).then((response)=>{
       // console.log(response.data.results[8])
       // console.log(response.data.results[0].name    )
-      setMovie(response.data.results[8])
+      setMovie(response.data.results[11])
      
     })
   },[])
