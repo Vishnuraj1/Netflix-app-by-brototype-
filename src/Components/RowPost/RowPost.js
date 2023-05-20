@@ -43,12 +43,19 @@ const[urlId,setUrlId]=useState('')
     <div className='row'>
       <h2>{props.title}</h2>
       <div className="posters">
-        {movies.map((obj) =>
+        {movies.map((obj) => 
 
           <img onClick={() => handleMovie(obj.id)} className={props.isSmall ? 'smallposter' : 'poster'} src={`${imageUrl + obj.backdrop_path}`} />
-
+          // <h2>{movies ? movies.title ? movies.title: movies.name:""}</h2>
+               
         )}
       </div>
+      
+      {/* <div className='movie-name'>
+        {console.log(movies)}
+             <h2>{movies ? movies.title ? movies.title: movies.name:""}</h2>
+       
+      </div> */}
 
    {  urlId && <YouTube opts={opts} videoId={urlId.key} />  }
 
