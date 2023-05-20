@@ -4,6 +4,7 @@ import NavBar from './Components/NavBar/NavBar';
 import {Originals,Action,Comedy,Romance,Horror} from './Urls'
 import Banner from './Components/Banner/Banner';
 import RowPost from './Components/RowPost/RowPost';
+import Footer from './Components/Footer/Footer';
 function App() {
 
   return (
@@ -15,6 +16,7 @@ function App() {
      <RowPost Url={Comedy} title='Comedy' isSmall/>
      <RowPost Url={Romance} title='Romance' isSmall/>
      <RowPost Url={Horror} title='Horror' isSmall/>
+     <Footer/>
     </div>
   );
 }

@@ -59,6 +59,8 @@
     .content{
         padding: 90px;
         height: 279px;
+        /* width: fit-content; */
+       
        
     }
     .title{
@@ -78,7 +80,12 @@
     }
     .banner-buttons{
         margin-top: 1rem;
-        width: 500px;
+        height: 45px;
+        
+       
+    }
+    .btn{
+       
     }
     .fade-bottom{
         height: 7.4rem;
