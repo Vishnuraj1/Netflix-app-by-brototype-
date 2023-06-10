@@ -43,13 +43,13 @@ function RowPost(props) {
     <div className='row'>
       <h2>{props.title}</h2>
       <div className="posters">
-        {movies.map((obj) =>
+        {movies.map((obj,index) =>
 <div>
-          <img onClick={() => handleMovie(obj.id)} className={props.isSmall ? 'smallposter' : 'poster'} src={`${imageUrl + obj.backdrop_path}`} />
+          <img onClick={() => handleMovie(obj.id)} className={props.isSmall ? 'smallposter' : 'poster'} src={`${imageUrl + obj.backdrop_path}`} key={index} />
          
-          <h2 className='movie-title'>{obj ? obj.title ? obj.title : obj.name : "Hello"}</h2>
+          <h2 className='movie-title' >{obj ? obj.title ? obj.title : obj.name : "Hello"}</h2>
 
-          <h6 className='rating'>Rating {obj ? obj.vote_average :"hello"}</h6>
+          <h6 className='rating' >Rating {obj ? obj.vote_average :"hello"}</h6>
 
 </div>
 
