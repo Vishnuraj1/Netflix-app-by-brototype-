@@ -6,7 +6,7 @@ import axios from '../../axios'
 
 function RowPost(props) {
   const [movies, setMovies] = useState([])
-const[urlId,setUrlId]=useState('')
+  const [urlId, setUrlId] = useState('')
 
   useEffect(() => {
     axios.get(props.Url).then((response) => {
@@ -27,12 +27,12 @@ const[urlId,setUrlId]=useState('')
   };
 
   const handleMovie = (id) => {
-    axios.get(`/movie/${id}/videos?language=en-US&api_key=${API_KEY}`).then((response)=>{
+    axios.get(`/movie/${id}/videos?language=en-US&api_key=${API_KEY}`).then((response) => {
       // console.log(response.data)
-      if(response.data.results.length!==0){
+      if (response.data.results.length !== 0) {
         setUrlId(response.data.results[0])
       }
-      else{
+      else {
         console.log("Array is empty")
       }
 
@@ -43,21 +43,22 @@ const[urlId,setUrlId]=useState('')
     <div className='row'>
       <h2>{props.title}</h2>
       <div className="posters">
-        {movies.map((obj) => 
-
+        {movies.map((obj) =>
+<div>
           <img onClick={() => handleMovie(obj.id)} className={props.isSmall ? 'smallposter' : 'poster'} src={`${imageUrl + obj.backdrop_path}`} />
-          // <h2>{movies ? movies.title ? movies.title: movies.name:""}</h2>
-               
-        )}
-      </div>
-      
-      {/* <div className='movie-name'>
-        {console.log(movies)}
-             <h2>{movies ? movies.title ? movies.title: movies.name:""}</h2>
-       
-      </div> */}
+         
+          <h2 className='movie-title'>{obj ? obj.title ? obj.title : obj.name : "Hello"}</h2>
 
-   {  urlId && <YouTube opts={opts} videoId={urlId.key} />  }
+          <h6 className='rating'>Rating {obj ? obj.vote_average :"hello"}</h6>
+
+</div>
+
+          )}
+      </div>
+
+       <div className='youtube'>
+        {urlId && <YouTube opts={opts} videoId={urlId.key} />}
+        </div>
 
     </div>
   )
