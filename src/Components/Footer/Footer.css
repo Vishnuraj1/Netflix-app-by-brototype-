@@ -1,0 +1,97 @@
+.container{
+    height: auto;
+}
+.footer{
+    height: 50rem;
+    
+}
+.phone {
+    color: rgb(215, 201, 201);
+    margin-top: 3rem;
+    margin-left: 5rem;
+}
+
+.footBox {
+    list-style-type: none;
+    float: left;
+    margin: 30px;
+    padding: 80px;
+
+
+}
+
+.footBox ul li a {
+    text-decoration: none;
+    color: white;
+    padding-top: 55px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-column-gap: 10px
+}
+.footBox ul li a:hover{
+    text-decoration: underline;
+    color: red;
+}
+
+.dropbtn {
+    background-color: #db1111;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    position: absolute;
+    left: 105px;
+    margin-top: 34rem;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: #dae6db; color: black;}
+
+  .rights{
+    color: white;
+    position: absolute;
+    left: 42rem;
+    margin-top: 43rem;
+  }
+
+  @media (min-width: 360px ) and (max-width:930px){
+    .rights{
+      
+      position: absolute;
+      left: 4rem;
+      margin-top: 135rem;
+    }
+    .footBox ul li a{
+      text-align: center;
+    }
+    .dropdown {
+      position: absolute;
+      left: 125px;
+      margin-top: 37rem;
+    }
+  
+  }

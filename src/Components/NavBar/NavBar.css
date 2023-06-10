@@ -1,23 +1,56 @@
-.navbar{
+.navbar {
     position: fixed;
     top: 0;
     width: 100%;
     height: 30px;
     padding: 20px;
-    display: flex; 
+    display: flex;
     justify-content: space-between;
     background-color: #111;
-    
+
+
+
 }
-.logo{
+
+.logo {
     position: fixed;
     top: 20px;
     left: 20px;
     width: 80px;
 }
-.avatar{
+
+.list-nav {
+    margin-left: 100px;
+}
+
+.list-nav li {
+    color: rgb(181, 172, 172);
+    list-style-type: none;
+    cursor: pointer;
+    float: left;
+    margin-left: 30px;
+    font-size: larger;
+
+}
+
+.list-nav li:hover {
+    color: #ffff;
+    transform: scale(1.1);
+    transition: .2s;
+  
+}
+
+
+.avatar {
     position: fixed;
     top: 20px;
     right: 20px;
     width: 30px;
+}
+
+
+@media (min-width: 360px ) and (max-width:930px){
+    .list-nav{
+        display: none;
+    }
 }

@@ -55,16 +55,23 @@
         height: 458px;
         width: auto;
         color: white;
+        
     }
     .content{
         padding: 90px;
         height: 279px;
+   
+        /* width: fit-content; */
+       
        
     }
     .title{
         font-size: 2rem;
         font-weight: 800;
+        padding-top: 2.6rem;
         padding-bottom: 0.8rem;
+       
+        
     }
     .description{
         width: 15rem;
@@ -78,7 +85,12 @@
     }
     .banner-buttons{
         margin-top: 1rem;
-        width: 500px;
+        height: 45px;
+        
+       
+    }
+    .btn{
+       
     }
     .fade-bottom{
         height: 7.4rem;

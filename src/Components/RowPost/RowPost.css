@@ -16,11 +16,18 @@
     cursor: pointer;
     max-height: 250px;
     margin-right: 10px;
+    height: 15rem;
+    min-width: 22rem;
+    /* margin-left: 5rem; */
+    
+    
 }
 .smallposter{
     cursor: pointer;
     max-height: 150px;
     margin-right: 10px;
+    height: 10rem;
+    min-width: 15rem;
 }
 .poster:hover{
     transform: scale(1.1);
@@ -29,4 +36,14 @@
 .smallposter:hover{
     transform: scale(1.1);
     transition: .5s;
+}
+
+.movie-name{
+    /* background-color: aqua; */
+    color: white;
+    height: 100px;
+}
+.movie-title{
+    color: white;
+    font-size: medium;
 }
