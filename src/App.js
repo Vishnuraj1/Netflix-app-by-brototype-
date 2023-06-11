@@ -1,5 +1,6 @@
 import './App.css'
 // import 'bootstrap/dist/css/bootstrap.min.css';
+import 'font-awesome/css/font-awesome.min.css';
 import NavBar from './Components/NavBar/NavBar';
 import {Originals,Action,Comedy,Romance,Horror} from './Urls'
 import Banner from './Components/Banner/Banner';
